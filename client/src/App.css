@@ -1,0 +1,45 @@
+/* 1. Style the Status Text */
+.status {
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-family: 'Arial', sans-serif; /* Clean sans-serif font like the image */
+}
+
+/* 2. Style the Rows */
+.board-row {
+  display: flex; /* This ensures squares sit perfectly side-by-side */
+}
+
+/* 3. Style the Squares */
+.square {
+  /* Dimensions to match the large look */
+  width: 80px;
+  height: 80px;
+  
+  /* Resetting default Button styles */
+  background: #fff;  /* White background instead of gray */
+  border: 1px solid #999; /* Thin, sharp borders for the grid */
+  border-radius: 0; /* Removes any rounded corners */
+  padding: 0;
+  margin-top: -1px;   /* These negative margins prevent */
+  margin-right: -1px; /* double-thick borders where squares touch */
+  
+  /* Typography */
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+  line-height: 80px; /* Helps vertically center text if not using flex */
+  
+  /* Centering content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  /* Interaction */
+  cursor: pointer;
+}
+
+/* Optional: Removes the blue outline when you click a square */
+.square:focus {
+  outline: none;
+}
